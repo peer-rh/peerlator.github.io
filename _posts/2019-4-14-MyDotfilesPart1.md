@@ -6,6 +6,7 @@ layout: post
 
 # My Dotfiles - Part 1: The concepts
 > As I'm creating my [dotfiles](https://github.com/peerlator/dotfiles-arch) while writing this series, the dotfiles aren't completely finished. At the moment the installation scripts don't work.  
+
 ## What's this?
 In the upcoming blog posts I will tell you about how I created my dotfiles and how you can create yours. I will tell you about what I use, how I use and configure these programs and how I have made changing the configurations easy. The structure of the following blogposts will be:
 - Part 1 (This one): The concepts
