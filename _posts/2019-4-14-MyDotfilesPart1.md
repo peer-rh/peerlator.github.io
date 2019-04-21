@@ -5,24 +5,24 @@ layout: post
 ---
 
 # My Dotfiles - Part 1: The concepts
-> As I'm creating my [dotfiles](https://github.com/peerlator/dotfiles-arch) while writing this series, the dotfiles aren't completely finished. At the moment the installation scripts don't work.  
+> As I'm creating my [dotfiles](https://github.com/peerlator/dotfiles-new) while writing this series, the dotfiles aren't completely finished. At the moment the installation scripts don't work.  
 
 ## What's this?
 In the upcoming blog posts I will tell you about how I created my dotfiles and how you can create yours. I will tell you about what I use, how I use and configure these programs and how I have made changing the configurations easy. The structure of the following blogposts will be:
-- Part 1 (This one): The concepts
-- Part 2: Arch Linux
-- Part 3: Zsh
-- Part 4: Visual Studio Code
-- Part 5: i3wm and polybar
-- Part 6: PyWal
-- Part 7: Dropdowns and Conky
-- Part 8: Miscellaneous
+- [Part 1 (This one): The concepts](https://www.peerlator.com/2019/04/14/MyDotfilesPart1.html)
+- [Part 2: Arch Linux](https://www.peerlator.com/2019/04/21/MyDotfilesPart2.html)
+- [Part 3: i3wm and polybar](https://www.peerlator.com/2019/04/28/MyDotfilesPart3.html)
+- [Part 4: Zsh](https://www.peerlator.com/2019/05/05/MyDotfilesPart4.html)
+- [Part 5: Visual Studio Code](https://www.peerlator.com/2019/05/12/MyDotfilesPart5.html)
+- [Part 6: PyWal](https://www.peerlator.com/2019/05/19/MyDotfilesPart6.html)
+- [Part 7: Dropdowns and Conky](https://www.peerlator.com/2019/05/26/MyDotfilesPart7.html)
+- [Part 8: Miscellaneous](https://www.peerlator.com/2019/06/02/MyDotfilesPart8.html)
 
 ## What are Dotfiles?
 Basicaly dotfiles are only the configurations of your system. As dotfiles are an already well documented concept, so I will only provide some helpful resources:
 - Many Examples: https://dotfiles.github.io/
 - Introduction: https://medium.com/@webprolific/getting-started-with-dotfiles-43c3602fd789
-- My Inspiration: https://github.com/holman/dotfiles
+- My Inspiration: https://github.com/nelsonmestevao/dotfiles
 - Beautiful Setups and Inspiration: https://www.reddit.com/r/unixporn/
 
 I really encourage you to go ahead and take some time to look at some of the examples of all these dotfiles and look at what is possible for your operating system, and if there are any programs which you would like to use. 
@@ -63,8 +63,10 @@ dotfiles
 │   ├── <configfile>
 │   ├── install.sh
 │   └── ...
-├── general_installs.sh
-├── app_installs.sh
+├── distro.sh (Distro specific commands)
+├── packages.sh (The packages to be installed)
+├── helpers.sh (Functions which combine distro.sh and packages.sh)
+├── special_installs.sh (Steps of the instalation which can't be done via pacman)
 └── install.sh
 ```
 All the install.sh files will be executed when calling the install.sh file in the root directory. The general_installs.sh and app_installs.sh will also be executed. With this system I can put a check next to point 2. For reloading the hard copies I configured a keyboard shortcut, however more on that in part 5. To fulfill point 1 I added special file endings, like `.zsh` or `.i3`. Those files will then be loaded in the config file or all be concatenated to a full config file. 
