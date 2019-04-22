@@ -9,14 +9,7 @@ layout: post
 
 ## What's this?
 In this blog post series I will tell you about how I created my dotfiles and how you can create yours. I will tell you about what I use, how I use and configure these programs and how I have made changing the configurations easy. The structure of the following blogposts will be:
-- [Part 1: The concepts](https://www.peerlator.com/2019/04/14/MyDotfilesPart1.html)
-- [Part 2 (This one): Arch Linux](https://www.peerlator.com/2019/04/21/MyDotfilesPart2.html)
-- [Part 3: i3wm and polybar](https://www.peerlator.com/2019/04/28/MyDotfilesPart3.html)
-- [Part 4: Zsh](https://www.peerlator.com/2019/05/05/MyDotfilesPart4.html)
-- [Part 5: Visual Studio Code](https://www.peerlator.com/2019/05/12/MyDotfilesPart5.html)
-- [Part 6: PyWal](https://www.peerlator.com/2019/05/19/MyDotfilesPart6.html)
-- [Part 7: Dropdowns and Conky](https://www.peerlator.com/2019/05/26/MyDotfilesPart7.html)
-- [Part 8: Miscellaneous](https://www.peerlator.com/2019/06/02/MyDotfilesPart8.html)
+{% include dotfiles-table-of-contents.md %}
 
 ## What's Arch Linux
 Arch Linux is a Linux distribution, just like Ubuntu or Fedora. What makes Arch Linux "special" is the minimalism of the distro, when you install it. In comparison to Ubuntu for example, you don't get a preinstalled GUI or web browser. Almost everything has to be installed manually. As you only start with a bash interface, you should already know the basics of the terminal. If you don't know about the terminal but still want to use Arch, I recommend that you start out with an distribution, that is based on Arch, like Manjaro. You could most probably also follow along with this series with your distro of choice, however some steps may be more difficult. The reasons why I chose Arch are:
