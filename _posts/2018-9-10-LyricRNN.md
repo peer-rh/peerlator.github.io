@@ -5,7 +5,7 @@ categories:
   - Blog
 tags:
   - AI
-  - Deep learning
+  - Deep Learning
 ---
 
 # Intro
