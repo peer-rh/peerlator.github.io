@@ -73,7 +73,7 @@ _update
 echo_info "Installing packages..."
 _install "${PKGS[@]}"
 
-. special_installs # run special installation steps
+. special_installs.sh # run special installation steps
 ```
 
 Then edit the `distro.sh`:
@@ -127,11 +127,7 @@ function _update() {
 
 Now that we have all this we can simply add the packages to the `packages.sh` file, which will have the form:
 ```shell
-export PKGS=(
-  <PACKAGE_1>
-  <PACKAGE_2>
-  ...
-)
+export PKGS=(<PACKAGE_1> <PACKAGE_2> ...)
 ```
 As we can see these packages are installed in the `install.sh` file. Now we have a extensible installation system, where we can install programs with ease. In future posts we will discuss how we can store configuration files and sync them.
 
