@@ -61,7 +61,7 @@ plugins:
 author:
   name   : "Peer Rheinboldt"
   avatar : "/assets/images/bio-photo.jpg"
-  bio    : "Hi! I'm Peer, the owner of this blog. I'm 14 years old and code in my free time."
+  bio    : "Hi! I'm Peer, the owner of this blog. I'm a teenager and code in my free time."
   links:
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
